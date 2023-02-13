@@ -1,2 +1,35 @@
-package org.example;public class Hashset {
+package org.example;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.logging.*;
+
+public class Hashset {
+
+    public static void main(String[] args) {
+        Logger l =  Logger.getLogger("arun");
+        HashSet<String> set= new HashSet<>();
+        set.add("Hh");
+        set.add("AA");
+        set.add("BB");
+        set.add("CC");
+        set.add("DD");
+        set.add("EF");
+        Iterator<String> i=set.iterator();//->Traversing elements
+        while(i.hasNext())
+        {
+            l.log(Level.INFO,()->" " +i.next());
+        }
+
+        HashSet<String> set1= new HashSet<>();
+
+        set1.add("Z");
+        set1.add("Y");
+        set.addAll(set1);
+        l.log(Level.INFO,()->" " +set);
+        set.remove("A");//->Removing specific element from HashSet
+        l.log(Level.INFO,()->""+set);
+
+    }
+
 }
