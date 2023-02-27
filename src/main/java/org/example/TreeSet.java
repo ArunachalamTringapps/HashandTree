@@ -1,14 +1,13 @@
 package org.example;
 
 import java.util.Iterator;
-import java.util.TreeSet;
 import java.util.logging.*;
 
-public class Hashtree {
+public class TreeSet {
 
     public static void main(String[] args) {
         Logger l =  Logger.getLogger("arun");
-        TreeSet<String> ts1 = new TreeSet<>();//->Elements are added using add() method
+        java.util.TreeSet<String> ts1 = new java.util.TreeSet<>();//->Elements are added using add() method
         ts1.add("arun");
         ts1.add("bala");
         ts1.add("loki");
