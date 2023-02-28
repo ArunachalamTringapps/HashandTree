@@ -6,8 +6,8 @@ import java.util.logging.*;
 
 public class Hashset {
 
-    public static void main(String[] args) {
-        Logger l =  Logger.getLogger("arun");
+    public static void firstname() {
+        Logger l =  Logger.getLogger(Hashset.class.getName());
         HashSet<String> set= new HashSet<>();
         set.add("Hh");
         set.add("AA");
@@ -29,6 +29,7 @@ public class Hashset {
         l.log(Level.INFO,()->" " +set);
         set.remove("A");//->Removing specific element from HashSet
         l.log(Level.INFO,()->""+set);
+        l.log(Level.INFO,()->"Hashcode: "+set.hashCode());
 
     }
 

@@ -7,9 +7,9 @@ import java.util.logging.Logger;
 
 public class Hashmap
 {
-    public static void main( String[] args )
+    public static void firstname()
     {
-        Logger l =  Logger.getLogger("arun");
+        Logger l =  Logger.getLogger(Hashmap.class.getName());
         HashMap<Integer, String> languages = new HashMap<>();
 
         languages.put(1, "Java");
